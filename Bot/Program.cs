@@ -43,7 +43,7 @@ async Task RegisterAccounts(int countIterations)
             continue;
         
         await File.AppendAllTextAsync("accounts.txt", $"\n{email};{pass}");
-        Console.WriteLine($"Registered: {email}");
+        Console.WriteLine($"{email}: Registered");
     }
 }
 
@@ -80,4 +80,4 @@ async Task LikePost(string postId)
     }
 }
 
-#endregion 
+#endregion
